@@ -1,120 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Primeiro Projeto</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <title>Loja de Materiais de Construção</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/js/bootstrap.min.js"></script>
 </head>
+
 <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#"><img src="https://lh3.googleusercontent.com/p/AF1QipMrjWFuwIfrw9wlpCBoPJBrQQ1Kv-JarhtgAWpa=s680-w680-h510" height="100"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Início</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="#">Produtos</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="#">Carinho</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="#">Cadastro dos Produtos</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="#">Cadastro dos Clientes</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pagamentos</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contatos</a>
-        </li> 
+  <header>
+    <img src="https://lh3.googleusercontent.com/p/AF1QipMrjWFuwIfrw9wlpCBoPJBrQQ1Kv-JarhtgAWpa=s680-w680-h510" alt="logo da loja" height="100">
+    <h1>Loja de Materiais de Construção</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Pagamentos</a></li>
+        <li><a href="#">Carrinho</a></li>
+        <li><a href="#">Contatos</a></li>
+        <input type="text" id="searchInput" placeholder="Pesquisar produtos...">
+        <button id="searchButton">Pesquisar</button>
       </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Buscar produtos">
-        <button class="btn btn-outline-success" type="submit">Buscar Produtos</button>
-      </form>
-    </div>
-  </div>
-</nav>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    </nav>
+  </header>
 
-<div class="container">
+  <main>
+    <div class="container">
   <div class="row">
-    <div class="col-6 col-md-4 col-lg-3">
-      <div class="card" style="width: 18rem;">
-  <img src="https://d3gcmglegmnvz8.cloudfront.net/def_img/75124/default_0" class="card-img-top" alt=">Caixa de Água de Polietileno">
-  <div class="card-body">
-    <h5 class="card-title">Caixa de Água de Polietileno com Tampa 1.000L Azul - Fortlev</h5>
-    <p class="card-text">R$2.999,00</p>
-     <p class="card-text">Em até 10x de R$ 299,99 sem juros</p>
-    <a href="#" class="btn btn-primary">Adicionar ao Carrinho</a>
-  </div>
-</div>  
+    <div class="col">
+    <div class="card" style="width: 18rem;">
+      <img src="https://d3gcmglegmnvz8.cloudfront.net/def_img/75124/default_0" class="card-img-top" alt="">
+      <div class="card-body">
+        <h3>Caixa d'água de 1000 litros</h3>
+        <p class="price">Preço: R$ 500,00</p>
+        <p class="delivery">Entrega: 5-7 dias úteis</p>
+        <p class="description">Descrição: Caixa d'água de polietileno com capacidade para 1000 litros. Ideal para
+          armazenamento de água potável em residências e estabelecimentos comerciais.</p>
+        <p class="info">Informações adicionais: Resistente a impactos, fácil instalação, acompanha tampa de vedação e
+          conexões para entrada e saída de água.</p>
+        <input type="number" min="1" value="1"> <!-- Quantidade do produto -->
+        <button type="button" class="btn btn-danger">COMPRAR AGORA</button>
+        <button type="button" class="btn btn-secondary">ADICIONAR NO CARRINHO</button>
+      </div>
     </div>
-
-<div class="col-6 col-md-4 col-lg-3">
+    </div>
+    <div class="col">
       <div class="card" style="width: 18rem;">
   <img src="https://http2.mlstatic.com/D_NQ_NP_812112-MLU72679478776_112023-O.webp" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title">Kit 20 Lâmpada Led 15w Bulbo E27 6500k Branco Frio Cor Da Luz Branco-frio 110v/220v</h5>
-    <p class="card-text">R$ 129 em 12x R$12,54</p>
-    <a href="#" class="btn btn-primary">Adicionar no carrinho</a>
+   <h3>Kit de Lâmpadas LED Econômicas (10 unidades)</h3>
+          <p class="price">Preço: R$ 150,00</p>
+          <p class="delivery">Entrega: 3-5 dias úteis</p>
+          <p class="description">Descrição: Kit contendo 10 lâmpadas LED de alta eficiência energética. Ideal para
+            iluminação residencial e comercial, proporcionando economia de energia e longa vida útil.</p>
+          <p class="info">Informações adicionais: Lâmpadas com potência de 9W, equivalente a uma lâmpada incandescente
+            de 60W. Temperatura de cor branca (6500K) para uma iluminação clara e brilhante. Base padrão E27 para fácil
+            instalação em diversos tipos de luminárias.</p>
+          <input type="number" min="1" value="1"> <!-- Quantidade do produto -->
+          <button type="button" class="btn btn-danger">COMPRAR AGORA</button>
+          <button type="button" class="btn btn-secondary">ADICIONAR NO CARRINHO</button>
   </div>
 </div>
-      
     </div>
-    <div class="col-6 col-md-4 col-lg-3">
-
+    <div class="col">
       <div class="card" style="width: 18rem;">
-  <img src="https://cdn.leroymerlin.com.br/products/aditivo_para_chapisco_bianco_3,6kg_branco_vedacit_86101834_c5fd_600x600.jpg" class="card-img-top" alt="Aditivo para Chapisco Bianco 3,6kg Branco Vedacit">
+  <img src="https://baupower.fbitsstatic.net/img/p/alicate-prendedor-de-perfil-pro-71131/257649-1.jpg?w=575&h=575&v=no-change&qs=ignore" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title">Aditivo para Chapisco Bianco 3,6kg Branco Vedacit</h5>
-    <p class="card-text">R$ 129,39 /cada
-R$ 129,39 em até 1x de R$ 129,39 sem juros
-ou em até 6x s/ juros no cartão Celebre!</p>
-    <a href="#" class="btn btn-primary">Adiconar no carrinho</a>
+    <h3>ALICATE PRENDEDOR DE PERFIL PRO</h3>
+          <p class="price">Preço: R$ 50,00</p>
+          <p class="delivery">Entrega: 2-5 dias úteis</p>
+          <p class="description">Descrição: Alicate prendedor de perfil profissional, ideal para trabalhos de fixação e
+            montagem em construção civil e marcenaria.</p>
+          <p class="info">Informações adicionais: Feito de aço resistente, com design ergonômico para fácil manuseio.
+            Tamanho: 8 polegadas.</p>
+          <input type="number" min="1" value="1"> <!-- Quantidade do produto -->
+          <button type="button" class="btn btn-danger">COMPRAR AGORA</button>
+          <button type="button" class="btn btn-secondary">ADICIONAR NO CARRINHO</button>
   </div>
-</div>   
-      
+</div>
     </div>
-    <div class="col-6 col-md-4 col-lg-3">
+  </div>
+</div>
+ <div class="row">
+    <div class="col">
       <div class="card" style="width: 18rem;">
-  <img src="https://img.irroba.com.br/fit-in/600x600/filters:format(webp):fill(fff):quality(80)/impermix/catalog/api/impermix_citelirr/61b3d34e97350.jpg" class="card-img-top" alt="CHUVEIRO C/TUBO PAREDE DECA">
+  <img src="https://lojaobramax.vtexassets.com/arquivos/ids/5261208-1600-auto?v=638447668262000000&width=1600&height=auto&aspect=true" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title">CHUVEIRO C/TUBO PAREDE DECA</h5>
-    <p class="card-text">De R$ 533,49
-Por R$ 449,00
-3x de R$ 149,67 sem juros</p>
-    <a href="#" class="btn btn-primary">Adicionar no Carrinho</a>
+    <h3>Cimento CPII E-32 50Kg Nacional</h3>
+                    <p class="price">Preço: R$ 30,00</p>
+                    <p class="delivery">Entrega: 3-7 dias úteis</p>
+                    <p class="description">Descrição: Cimento Portland composto de alta qualidade, ideal para obras de construção civil, reformas e assentamento de alvenaria.</p>
+                    <p class="info">Informações adicionais: Tipo: CP II E-32 (NBR 11578), resistente a ambientes agressivos, proporciona maior durabilidade às estruturas.</p>
+                    <input type="number" min="1" value="1"> <!-- Quantidade do produto -->
+                    <button type="button" class="btn btn-danger">COMPRAR AGORA</button>
+                    <button type="button" class="btn btn-secondary">ADICIONAR NO CARRINHO</button>
   </div>
 </div>
-      
-      
     </div>
-    <div class="col-6 col-md-4 col-lg-3">
-      
-      
-      
-    </div>
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+  <img src="https://static-casanova.plataformaneo.com.br/produto/20180920224359_8500991500_D.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h2>Bóia para Caixa D´Água 1/2 - 3/4 - 1" Click Tigre</h2>
+    <p class="price">Preço: R$ 15,00</p>
+    <p class="delivery">Entrega: 2-4 dias úteis</p>
+    <p class="description">Descrição: Bóia flutuante para caixas d'água, compatível com tubulações de 1/2, 3/4 e 1 polegada. Fabricada pela marca Tigre, garantindo qualidade e durabilidade.</p>
+    <p class="info-details">Informações Adicionais: Fácil instalação, ajustável para diferentes níveis de água, material resistente a corrosão.</p>
+    <label for="quantity">Quantidade:</label>
+    <input type="number" id="quantity" name="quantity" min="1" value="1">
+    <button type="button" class="btn btn-danger">COMPRAR AGORA</button>
+          <button type="button" class="btn btn-secondary">ADICIONAR NO CARRINHO</button>
   </div>
 </div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+  <img src="https://static-casanova.plataformaneo.com.br/produto/20211104121220_2716997284_D.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h2>Cadeado Latão com Chave Tetra 50mm Papaiz</h2>
+    <p class="price">Preço: R$ 25,00</p>
+    <p class="delivery">Entrega: 3-5 dias úteis</p>
+    <p class="description">Descrição: Cadeado de alta qualidade em latão, com sistema de chave tetra para maior segurança. Ideal para proteger seus pertences com confiança.</p>
+    <p class="info-details">Informações Adicionais: Resistente à corrosão, sistema de travamento duplo, acompanha 2 chaves.</p>
+    <input type="number" min="1" value="1"> <!-- Quantidade do produto -->
+    <input type="number" id="quantity" name="quantity" min="1" value="1">
+    <button type="button" class="btn btn-danger">COMPRAR AGORA</button>
+          <button type="button" class="btn btn-secondary">ADICIONAR NO CARRINHO</button>
+  </div>
+</div>
+    </div>
+  </div>
 
 
+  </main>
+
+  <!-- <footer>
+    <p>&copy; 2024 Loja de Materiais de Construção</p>
+  </footer> -->
+
+  <script src="script.js"></script>
 </body>
+
 </html>
